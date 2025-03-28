@@ -13,10 +13,10 @@
 
 ## Installation
 
-To install `git-single` globally, run:
+To install `git-single` globally, run Invoke-WebRequest outputting the file to a directory in your PATH e.g.:
 
 ```powershell
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/btigi/git-single/main/git-single.ps1" -OutFile "$env:ProgramFiles\git-single\git-single.ps1"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/btigi/git-single/main/git-single.ps1" -OutFile "C:\utils\git-single.ps1"
 ```
 
 Now you can use `git-single` from anywhere in your terminal.
