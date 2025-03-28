@@ -2,7 +2,7 @@
 
 ## Overview
 
-`git-single` is a Bash script that allows you to clone a single file or directory from a GitHub repository using sparse checkout. This minimizes unnecessary downloads and simplifies access to specific files.
+`git-single` is a Powershell script that allows you to clone a single file or directory from a GitHub repository using sparse checkout. This minimizes unnecessary downloads and simplifies access to specific files.
 
 ## Features
 
@@ -15,9 +15,8 @@
 
 To install `git-single` globally, run:
 
-```bash
-sudo curl -o /usr/local/bin/git-single https://raw.githubusercontent.com/dha-aa/git-single/main/git-single.sh
-sudo chmod +x /usr/local/bin/git-single
+```powershell
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/btigi/git-single/main/git-single.ps1" -OutFile "$env:ProgramFiles\git-single\git-single.ps1"
 ```
 
 Now you can use `git-single` from anywhere in your terminal.
@@ -26,7 +25,7 @@ Now you can use `git-single` from anywhere in your terminal.
 
 ### Clone a Single File
 
-```bash
+```powershell
 git-single https://github.com/user/repo/blob/main/path/to/file.ts
 ```
 
@@ -34,7 +33,7 @@ This will download only `file.ts` and place it in the current directory.
 
 ### Clone a Specific Directory
 
-```bash
+```powershell
 git-single https://github.com/user/repo/tree/main/path/to/directory
 ```
 
@@ -44,7 +43,7 @@ This will clone only `directory` inside the repository.
 
 To update the script to the latest version, run:
 
-```bash
+```powershell
 git-single ---update
 ```
 
@@ -53,7 +52,7 @@ git-single ---update
 
 To Unistall the script to the latest version, run:
 
-```bash
+```powershell
 git-single ---uninstall
 ```
 
@@ -61,3 +60,4 @@ git-single ---uninstall
 
 This project is licensed under the MIT License. Feel free to use and contribute!
 
+This script is a Powershell equivalent of [git-single](https://github.com/dha-aa/git-single) by Dhananjay.
